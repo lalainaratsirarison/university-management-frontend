@@ -1,0 +1,33 @@
+{
+  "name": "university-management-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frontend React + Vite pour la plateforme de gestion universitaire INEDIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:public": "npm run dev --workspace=apps/public-web",
+    "dev:admin": "npm run dev --workspace=apps/admin-web",
+    "dev:student": "npm run dev --workspace=apps/student-web",
+    "dev:teacher": "npm run dev --workspace=apps/teacher-web",
+    "build": "npm run build --workspaces",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit -p tsconfig.base.json",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^9.0.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}

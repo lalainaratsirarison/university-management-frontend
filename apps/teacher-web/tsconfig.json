@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@university/ui": ["../../packages/ui/src"],
+      "@university/hooks": ["../../packages/hooks/src"],
+      "@university/utils": ["../../packages/utils/src"],
+      "@university/types": ["../../packages/types/src"],
+      "@university/api-client": ["../../packages/api-client/src"]
+    }
+  },
+  "include": ["src"]
+}
